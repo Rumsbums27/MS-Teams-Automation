@@ -64,10 +64,18 @@ class Teams():
                             time.sleep(3)
 
                         access = pyautogui.locateCenterOnScreen('images/settings/access.PNG')
-                        pyautogui.moveTo(access, duration=1)
-                        pyautogui.click()
+                        access2 = pyautogui.locateCenterOnScreen('images/settings/access2.PNG')
+                        if access is not None:
+                            pyautogui.moveTo(access, duration=1)
+                            pyautogui.click()
 
-                        time.sleep(3)
+                            time.sleep(3)
+
+                        if access2 is not None:
+                            pyautogui.moveTo(access2,duration=1)
+                            pyautogui.click()
+
+                            time.sleep(3)
 
                         cam = pyautogui.locateCenterOnScreen('images/settings/cam.PNG')
                         mic = pyautogui.locateCenterOnScreen('images/settings/mic.PNG')
